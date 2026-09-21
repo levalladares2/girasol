@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Importante para que se adapte al iPhone y no se pueda hacer zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Para la palida mas bonita  🌻</title>
+    
+    <!-- Incluimos la librería P5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    
+    <!-- Estilos muy básicos para centrar todo -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #faf8f0; /* Fondo crema muy claro */
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+            align-items: center;
+        }
+        #girasol-canvas {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #message {
+            text-align: center;
+            padding: 20px;
+            font-size: 1.3rem;
+            color: #4a3a1a; /* Marrón oscuro */
+            font-weight: 300;
+            line-height: 1.4;
+        }
+        span.sunflower { font-size: 1.5rem; }
+    </style>
+</head>
+<body>
+    <!-- Aquí se dibujará el girasol -->
+    <div id="girasol-canvas"></div>
+    
+    <!-- Tu mensaje personal -->
+    <div id="message">
+        <p>Un girasol digital...</p>
+        <p>... bonito como tú. <span class="sunflower">🌻</span></p>
+    </div>
+
+    <!-- Incluimos el código del dibujo -->
+    <script src="sketch.js"></script>
+</body>
+</html>
